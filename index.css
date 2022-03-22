@@ -13,7 +13,7 @@ header{
     background-size: cover;
     background-position: 50%;
     position: relative;
-    height: 90vh;
+    height: 100vh;
 }
 .header-content-wrapper{
     display: flex;
@@ -26,7 +26,7 @@ header{
 .header-overlay{
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    height: 90vh;
+    height: 100vh;
     top: 0;
     width: 100%;
 }
@@ -47,6 +47,10 @@ header{
 .navLink.active{
     color: #f9320a;
 }
+.menu-button{
+    display: none;
+}
+
 .hero-wrapper{
     display: flex;
     flex-direction: column;
@@ -118,7 +122,6 @@ header{
 }
 .download-btn a{
     text-decoration: none;
-    /* color: #f9320a; */
 }
 .download-btn:hover{
     background-color: #f9320a;
@@ -337,7 +340,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    /* margin-bottom: 100px; */
+   
 }
 .social-account-wrapper svg{
     fill: #f9320a;
@@ -368,4 +371,290 @@ main{
 }
 .copyright h5{
     font-size: 18px;
+}
+/* MEDIA QUERIES */
+
+/* FOR SMALL DEVICES */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    header {
+        height: 110vh;
+    } 
+    .header-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .logo{
+        font-size: 40px;
+        margin-bottom: 25px;
+    }
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        align-items: center; 
+        text-align: center;
+        margin-top: 10px;
+    } 
+    .full-name {
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    .brief {
+        font-size: 28px;
+    }
+    .contact-email{
+        padding: 6px;
+        margin-bottom: 20px;
+    }
+    .contact-email a {
+        text-decoration: none;
+        font-size: 22px;
+        color: #ffffff;
+    }  
+    .navLinks-wrapper{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .navLink {
+        font-size: 25px;
+    }
+    .about-brief {
+        font-size: 20px;
+    }
+    .card-content {
+        text-align: center;
+        width: 335px;
+    }
+    .place-of-work-section h2{
+        font-size: 20px;
+    }
+    .stack-group{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .place-of-work-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-card-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 20px;
+    }
+    .service-card-content{
+        text-align: center;
+        padding: 2px 16px;
+        width: 200px;
+    }
+    .form-group input{
+        width: 300px;
+    }
+    .form-group textarea{
+       width: 300px;
+       height: 250px;
+   }
+   .section {
+    padding: 30px;
+    }
+    .connect-with-me h2{
+        font-size: 22px;
+    }
+    .contact-with-email a {
+        font-size: 16px;
+    }
+    
+}
+
+
+/* FOR SMALL DEVICES */
+@media screen and (min-width: 480px) and (max-width: 767px){
+    header {
+        height: 110vh;
+    } 
+    .header-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        align-items: center; 
+        text-align: center;
+        margin-top: 50px;
+    } 
+    .full-name {
+        font-size: 28px;
+        margin: 13px 0px;
+    }
+    .brief {
+        font-size: 22px;
+    }
+    .contact-email{
+        padding: 6px;
+    }
+        
+    .navLinks-wrapper{
+        text-align: center;
+        margin-bottom: 5px;
+    }  
+    .about-brief {
+        font-size: 17px;
+    }
+    .card-content {
+        text-align: center;
+        width: 335px;
+    }
+    .place-of-work-section h2{
+        font-size: 20px;
+    }
+    .stack-group{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .place-of-work-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-card-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 20px;
+    }
+    .service-card-content{
+        text-align: center;
+        padding: 2px 16px;
+        width: 200px;
+    }
+    .form-group input{
+        width: 200px;
+    }
+    .form-group textarea{
+       width: 200px;
+       height: 150px;
+   }
+   .section {
+    padding: 30px;
+    }
+    .connect-with-me h2{
+        font-size: 22px;
+    }
+    .contact-with-email a {
+        font-size: 16px;
+    }
+    
+}
+
+/* FOR EXTRA SMALL DEVICES */
+@media only screen and (max-width: 479px){
+    header {
+        height: 110vh;
+    } 
+    
+    .header-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        align-items: center; 
+        text-align: center;
+        margin-top: 10px;
+    } 
+    .full-name {
+        color: white;
+        font-size: 21px;
+        text-transform: uppercase;
+        margin: 10px 0px;
+    }
+    .brief {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .navLinks-wrapper{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+     
+    .navLink.active {
+        left: 0;
+        color: #ffffff;
+    }
+     .nav-item {
+        margin: 1rem 0;
+    } 
+    .logo{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .card-content {
+        width: 300px;
+        padding: 6px 2px;
+        text-align: center;
+    }
+
+    .place-of-work-section h2{
+        font-size: 20px;
+    }
+    .stack-group{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .place-of-work-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-card-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 20px;
+    }
+    .service-card-content{
+        text-align: center;
+        padding: 2px 16px;
+        width: 200px;
+    }
+    .form-group input{
+        width: 200px;
+    }
+    .form-group textarea{
+       width: 200px;
+       height: 150px;
+   }
+   .section {
+    padding: 30px;
+    }
+    .connect-with-me h2{
+        font-size: 22px;
+    }
+    .contact-with-email a {
+        font-size: 16px;
+    }
 }
