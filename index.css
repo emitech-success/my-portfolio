@@ -373,11 +373,15 @@ main{
     font-size: 18px;
 }
 /* MEDIA QUERIES */
-
-/* FOR SMALL DEVICES */
+@media screen and (min-width: 1024px) and (max-width: 1350px){
+    header {
+        height: 150vh;
+    } 
+}
+/* FOR MEDIUM DEVICES */
 @media screen and (min-width: 768px) and (max-width: 1023px){
     header {
-        height: 110vh;
+        height: 150vh;
     } 
     .header-content-wrapper{
         display: flex;
@@ -476,7 +480,7 @@ main{
 /* FOR SMALL DEVICES */
 @media screen and (min-width: 480px) and (max-width: 767px){
     header {
-        height: 110vh;
+        height: 150vh;
     } 
     .header-content-wrapper{
         display: flex;
@@ -565,7 +569,7 @@ main{
 /* FOR EXTRA SMALL DEVICES */
 @media only screen and (max-width: 479px){
     header {
-        height: 110vh;
+        height: 150vh;
     } 
     
     .header-content-wrapper{
